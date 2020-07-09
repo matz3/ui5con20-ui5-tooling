@@ -2,7 +2,7 @@
 
 The repository contains the content for the UI5con ON AIR 2020 session *UI5 Tooling 2020*.
 
-[Slides](https://github.com/RandomByte/talks/blob/master/UI5con_at_SAP_2020/UI5con2020_UI5_Tooling_2020.pdf)  
+[Slides](https://github.com/RandomByte/talks/blob/master/UI5con_ON_AIR_2020/UI5con2020_UI5_Tooling_2020.pdf)  
 *Recording (coming soon)*
 
 ## [demo-nodejs-api](./demo-nodejs-api)
