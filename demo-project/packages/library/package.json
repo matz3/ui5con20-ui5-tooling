@@ -1,0 +1,12 @@
+{
+	"name": "@ui5con20/library",
+	"private": true,
+	"version": "1.0.0",
+	"description": "UI5con Demo Library",
+	"scripts": {
+		"test": "eslint ./src ./test"
+	},
+	"dependencies": {
+		"chartist": "^0.11.4"
+	}
+}

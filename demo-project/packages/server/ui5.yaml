@@ -1,0 +1,7 @@
+specVersion: "2.1"
+kind: extension
+type: server-middleware
+metadata:
+  name: backend
+middleware:
+  path: lib/middleware.js

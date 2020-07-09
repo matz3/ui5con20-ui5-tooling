@@ -1,0 +1,16 @@
+{
+  "name": "demo-nodejs-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "UI5con Node.js API Demo",
+  "main": "createPreload.js",
+  "scripts": {
+    "build": "node createPreload.js"
+  },
+  "devDependencies": {
+    "@openui5/sap.ui.core": "^1.79.0",
+    "@ui5/builder": "^2.0.4",
+    "@ui5/fs": "^2.0.1",
+    "@ui5/project": "^2.1.4"
+  }
+}

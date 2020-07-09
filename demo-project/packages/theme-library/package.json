@@ -1,0 +1,10 @@
+{
+	"name": "@ui5con20/theme-library",
+	"private": true,
+	"version": "1.0.0",
+	"description": "UI5con Demo Theme Library",
+	"scripts": {},
+	"dependencies": {
+		"@ui5con20/library": "^1.0.0"
+	}
+}

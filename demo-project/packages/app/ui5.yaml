@@ -1,0 +1,22 @@
+specVersion: "2.1"
+metadata:
+  name: app
+type: application
+framework:
+  name: OpenUI5
+  version: "1.79.0"
+  libraries:
+    - name: sap.f
+    - name: sap.m
+    - name: sap.ui.core
+server:
+  customMiddleware:
+  - name: ui5-middleware-livereload
+    afterMiddleware: compression
+    configuration:
+      extraExts: "xml,json,properties"
+      port: 35729
+      watchPath: "webapp"
+  - name: backend
+    mountPath: /data
+    afterMiddleware: compression

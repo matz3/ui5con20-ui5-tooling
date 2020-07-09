@@ -1,0 +1,43 @@
+<mvc:View
+	controllerName="ui5con20.app.controller.Object"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:lib="ui5con20.library"
+	xmlns:semantic="sap.f.semantic">
+
+	<semantic:SemanticPage
+		id="page"
+		headerPinnable="false"
+		toggleHeaderOnTitleClick="false"
+		busy="{objectView>/busy}"
+		busyIndicatorDelay="{objectView>/delay}">
+
+		<semantic:titleHeading>
+			<Title
+				text="{repositoryName}"
+				level="H2"/>
+		</semantic:titleHeading>
+
+		<semantic:headerContent>
+			<ObjectNumber
+				number="{
+					path: 'stars',
+					type: 'sap.ui.model.type.Float'
+				}"
+				unit="Github Stars"/>
+			<ObjectNumber
+				number="{
+					path: 'downloadsTotal',
+					type: 'sap.ui.model.type.Float'
+				}"
+				unit="npm Downloads"/>
+		</semantic:headerContent>
+
+		<semantic:content>
+			<lib:Chart
+				id="chart"
+				data="{downloadsRange}"/>
+		</semantic:content>
+
+	</semantic:SemanticPage>
+</mvc:View>

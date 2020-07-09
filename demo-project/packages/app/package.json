@@ -1,0 +1,27 @@
+{
+	"name": "@ui5con20/app",
+	"private": true,
+	"version": "1.0.0",
+	"description": "UI5con Demo App",
+	"scripts": {
+		"build": "ui5 build",
+		"test": "eslint ./webapp",
+		"start": "ui5 serve -o index.html"
+	},
+	"dependencies": {
+		"@ui5con20/theme-library": "^1.0.0",
+		"@ui5con20/library": "^1.0.0"
+	},
+	"devDependencies": {
+		"@ui5con20/server": "^1.0.0",
+		"ui5-middleware-livereload": "^0.3.0"
+	},
+	"ui5": {
+		"dependencies": [
+			"@ui5con20/library",
+			"@ui5con20/server",
+			"@ui5con20/theme-library",
+			"ui5-middleware-livereload"
+		]
+	}
+}
