@@ -2,6 +2,16 @@
  * ${copyright}
  */
 
+ // Provides a shim for the chartist library
+sap.ui.loader.config({
+	shim: {
+		"ui5con20/library/thirdparty/chartist/chartist": {
+			amd: true,
+			exports: "Chartist"
+		}
+	}
+});
+
 // Provides control ui5con20.library.Chart
 sap.ui.define([
 	"sap/ui/core/Control",
@@ -9,8 +19,7 @@ sap.ui.define([
 	"./ChartRenderer",
 	"./thirdparty/chartist/chartist",
 	"./library"
-], function(Control, HTML, ChartRenderer /*, Chartist, library */) {
-	/* global Chartist */
+], function(Control, HTML, ChartRenderer, Chartist /*, library*/) {
 	"use strict";
 
 	var Chart = Control.extend("ui5con20.library.Chart", {
