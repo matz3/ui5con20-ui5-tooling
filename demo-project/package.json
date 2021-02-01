@@ -12,7 +12,7 @@
 		"packages/*"
 	],
 	"devDependencies": {
-		"@ui5/cli": "^2.2.6",
-		"eslint": "^7.4.0"
+		"@ui5/cli": "^2.9.3",
+		"eslint": "^7.19.0"
 	}
 }
